@@ -37,4 +37,4 @@ Symbol legend:
  - ?? - Decision to make
  - !! - WTF
  - [] - to do
- - [x] - done
+ - [x] - done (I can't show you in .md. It's the to do symbol with a lowercase "x" in the middle.)

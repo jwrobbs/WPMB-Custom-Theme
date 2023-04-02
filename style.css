@@ -6,6 +6,25 @@ Author URI: https://joshrobbs.com
 GitHub Theme URI: https://github.com/understrap/understrap
 Text Domain: wpmb
 */
-/* Base templates */
-/* Special templates */
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-VariableFont_wght.ttf") format("ttf supports variations");
+  font-weight: 100 1000;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf") format("ttf supports variations");
+  font-style: italic;
+  font-weight: 100 1000;
+}
+html, :root {
+  --base-size: 18px;
+  font-size: var(--base-size);
+  line-height: 1.4;
+}
+@media all and (max-width: 768px) {
+  html, :root {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

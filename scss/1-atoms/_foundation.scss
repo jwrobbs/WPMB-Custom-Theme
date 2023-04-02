@@ -1,0 +1,10 @@
+html, :root {
+	--base-size: 18px;
+
+	font-size: var(--base-size);
+	@media all and (max-width: 768px) {
+		font-size: 16px;
+	}
+
+	line-height: 1.4;
+}

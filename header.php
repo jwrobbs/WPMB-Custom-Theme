@@ -23,6 +23,9 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'wp_body_open' );
 ?>
 <header class='container site-header'>
+	<a class="skip-link visually-hidden" href="#content">
+		<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
+	</a>
 	<div class='site-title'>
 		<?php
 		if ( is_home() ) {
@@ -36,3 +39,4 @@ do_action( 'wp_body_open' );
 		<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
 	</nav>
 </header>
+<div id="content">

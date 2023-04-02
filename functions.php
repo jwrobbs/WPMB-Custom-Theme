@@ -45,6 +45,8 @@ add_action( 'wp_enqueue_scripts', 'wpmb_remove_core_block_styles' );
  * @return void
  */
 function wpmb_theme_setup() {
+	wp_enqueue_style( 'style', get_stylesheet_uri(), false, filemtime( 'style.css' ) );
+
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
 	register_nav_menus(

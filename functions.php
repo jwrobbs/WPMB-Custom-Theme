@@ -36,3 +36,23 @@ function wpmb_remove_core_block_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'wpmb_remove_core_block_styles' );
 
+/**
+ * Theme setup
+ *
+ * @author Josh Robbs <josh@joshrobbs.com>
+ * @created 2023-04-02
+ *
+ * @return void
+ */
+function wpmb_theme_setup() {
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'post-thumbnails' );
+	register_nav_menus(
+		array(
+			'main'   => __( 'Main Menu', 'wpmb' ),
+			'footer' => __( 'Footer Menu', 'wpmb' ),
+		)
+	);
+
+}
+add_action( 'after_setup_theme', 'wpmb_theme_setup' );

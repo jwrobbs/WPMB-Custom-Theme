@@ -1,0 +1,23 @@
+html footer {
+
+	.footer-section {
+
+		ul {
+			padding: 0;
+			margin: 0;
+
+			li {
+				list-style-type: none;
+				
+				a {
+					color: $white;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+				
+			}
+		}
+	}
+}

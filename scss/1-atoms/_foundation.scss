@@ -7,4 +7,24 @@ html, :root {
 	}
 
 	line-height: 1.4;
+
+	background-color: $black;
+
+	* {
+		box-sizing: border-box;
+	}
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+#content .container {
+	background-color: $white;
 }

@@ -1,0 +1,23 @@
+.footer-wrapper {
+	
+	footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+		color: white;
+		background-color: $blue;
+		padding: 1rem .5rem;
+
+		.footer-biz-data {
+			text-align: center;
+
+			div, .footer-title {
+				margin-top: 1rem;
+			}
+	
+			.footer-title {
+				border: 1px solid $white;
+			}
+		}
+	}
+}

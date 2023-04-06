@@ -17,15 +17,61 @@ Text Domain: wpmb
   font-style: italic;
   font-weight: 100 1000;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0.5em 0 0.25em;
+}
+
+ul, ol {
+  margin-top: 0;
+}
+
 html, :root {
   --base-size: 18px;
   font-size: var(--base-size);
   line-height: 1.4;
+  background-color: #000;
 }
 @media all and (max-width: 768px) {
   html, :root {
     font-size: 16px;
   }
+}
+html *, :root * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#content .container {
+  background-color: #FFF;
+}
+
+html footer .footer-section ul {
+  padding: 0;
+  margin: 0;
+}
+html footer .footer-section ul li {
+  list-style-type: none;
+}
+html footer .footer-section ul li a {
+  color: #FFF;
+}
+html footer .footer-section ul li a:hover {
+  text-decoration: none;
 }
 
 .visually-hidden,
@@ -39,5 +85,51 @@ html, :root {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+.site-title a, .site-title span {
+  text-transform: uppercase;
+  font-size: 33px;
+  font-weight: bold;
+}
+.site-title a:hover {
+  opacity: 0.8;
+}
+
+.footer-wrapper footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  color: white;
+  background-color: #002244;
+  padding: 1rem 0.5rem;
+}
+.footer-wrapper footer .footer-biz-data {
+  text-align: center;
+}
+.footer-wrapper footer .footer-biz-data div, .footer-wrapper footer .footer-biz-data .footer-title {
+  margin-top: 1rem;
+}
+.footer-wrapper footer .footer-biz-data .footer-title {
+  border: 1px solid #FFF;
+}
+
+.header-wrapper header {
+  border-top: 6.2px solid #820000;
+  border-bottom: 3.8px solid #820000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+}
+.header-wrapper .site-title {
+  color: #FFF;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

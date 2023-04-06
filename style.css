@@ -83,9 +83,10 @@ footer .footer-social {
       -ms-flex-pack: center;
           justify-content: center;
 }
-footer .footer-social a, footer .footer-social i {
+footer .footer-social i {
+  padding: 6px;
   color: #FFF;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .visually-hidden,
@@ -123,7 +124,7 @@ footer .footer-social a, footer .footer-social i {
 .footer-wrapper footer .footer-biz-data {
   text-align: center;
 }
-.footer-wrapper footer .footer-biz-data div, .footer-wrapper footer .footer-biz-data .footer-title {
+.footer-wrapper footer .footer-biz-data > div, .footer-wrapper footer .footer-biz-data .footer-title {
   margin-top: 1rem;
 }
 .footer-wrapper footer .footer-biz-data .footer-title {

@@ -78,15 +78,49 @@ footer .footer-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 0.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+footer .footer-social a {
+  position: relative;
+  height: auto;
+  width: auto;
+  display: block;
+}
+footer .footer-social a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #820000;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.7;
+}
 footer .footer-social i {
-  padding: 6px;
+  position: relative;
+  z-index: 100;
+  padding: 6px 9px;
   color: #FFF;
   font-size: 2rem;
+}
+footer .footer-social i::before {
+  z-index: 100;
+}
+footer .footer-social i:hover {
+  opacity: 0.7;
 }
 
 .visually-hidden,

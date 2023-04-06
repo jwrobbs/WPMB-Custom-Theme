@@ -29,6 +29,9 @@ defined( 'ABSPATH' ) || exit;
 				<div class="youtube social-link">
 					<a href="https://www.youtube.com/channel/UCqwXzxkCClsh_4nMGNBK6xw" target="_blank"><i class="fab fa-youtube"></i></a>
 				</div>
+				<div class="github social-link">
+					<a href="https://github.com/jwrobbs" target="_blank"><i class="fab fa-github"></i></a>
+				</div>
 			</div>
 		</div>
 		<div class='footer-section footer-pages'>

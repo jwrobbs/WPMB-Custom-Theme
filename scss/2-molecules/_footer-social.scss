@@ -2,13 +2,48 @@ footer {
 
 	.footer-social {
 		display: flex;
-		gap: 1rem;
+		flex-wrap: wrap;
+		// gap: 1rem;
+		column-gap: 1rem;
+		row-gap: .5rem;
 		justify-content: center;
 		
+		a {
+			position: relative;
+			height: auto;
+			width: auto;
+			display: block;
+			&::before {
+				position: absolute;
+				content: '';
+				display: block;
+				background-color: $red_dark;
+				border-radius: 50%;
+
+				height: 48px;
+				width: 48px;
+				z-index: 1;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				opacity: .7;
+			}
+
+		}
 		i {
-			padding: 6px;
+			position: relative;
+			z-index: 100;
+			padding: 6px 9px;
 			color: $white;
 			font-size: 2rem;
+			
+			&::before {
+				z-index: 100;
+			}
+			
+			&:hover {
+				opacity: .7;
+			}
 		}
 	}
 }

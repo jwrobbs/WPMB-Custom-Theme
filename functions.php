@@ -152,3 +152,15 @@ function wpmb_get_footer_posts() {
 	return ob_get_clean();
 }
 
+/**
+ * Show the current year
+ *
+ * @author Josh Robbs <josh@joshrobbs.com>
+ * @created 2023-04-05
+ * @return string
+ */
+function wpmb_current_year_shortcode() {
+	// @codingStandardsIgnoreLine
+	return date( 'Y' );
+}
+add_shortcode( 'wpmb_current_year', 'wpmb_current_year_shortcode' );

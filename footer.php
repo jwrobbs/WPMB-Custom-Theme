@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class='footer-section footer-biz-data'>
 			<!-- this should be a function or template -->
 			<h2 class=footer-title>WP MASTER BUILDER</h2>
-			<div>©2023 Josh Robbs</div>
+			<div>©<?php echo do_shortcode( '[wpmb_current_year]' ); ?> Josh Robbs</div>
 		</div>
 		<div class='footer-section footer-pages'>
 			<?php echo wp_kses_post( wpmb_get_footer_pages() ); ?>

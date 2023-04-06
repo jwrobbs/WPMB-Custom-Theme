@@ -22,9 +22,9 @@ body {
 .container {
 	max-width: $max-width;
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 1rem 1rem;
 }
 
-#content .container {
+#content .container-inner {
 	background-color: $white;
 }

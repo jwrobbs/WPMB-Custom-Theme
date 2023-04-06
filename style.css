@@ -118,7 +118,6 @@ html footer .footer-section ul li a:hover {
 
 .header-wrapper header {
   border-top: 6.2px solid #820000;
-  border-bottom: 3.8px solid #820000;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;

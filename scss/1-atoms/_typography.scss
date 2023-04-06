@@ -1,3 +1,17 @@
-$body_font: "'Montserrat', sans-serif;";
+$body_font: 'Montserrat', sans-serif;;
 
 $heading_font: $body_font;
+
+body {
+	font-family: $body_font;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: .5em 0 .25em;
+}
+
+ul,ol {
+	margin-top: 0;
+}

@@ -22,21 +22,23 @@ defined( 'ABSPATH' ) || exit;
 <?php
 do_action( 'wp_body_open' );
 ?>
-<header class='container site-header'>
+<div class='container header-wrapper'>
 	<a class="skip-link visually-hidden" href="#content">
 		<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
 	</a>
-	<div class='site-title'>
-		<?php
-		if ( is_home() ) {
-			echo 'WP Master Builder';
-		} else {
-			echo '<a href="/">WP Master Builder</a>';
-		}
-		?>
-	</div>
-	<nav>
-		<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
-	</nav>
-</header>
+	<header class=''>
+		<div class='site-title'>
+			<?php
+			if ( is_home() ) {
+				echo '<span>WP Master Builder</span>';
+			} else {
+				echo '<a href="/">WP Master Builder</a>';
+			}
+			?>
+		</div>
+		<nav>
+			<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+		</nav>
+	</header>
+</div>
 <div id="content">

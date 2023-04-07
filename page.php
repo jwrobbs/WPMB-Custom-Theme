@@ -13,15 +13,12 @@ get_header();
 <div class='container'>
 	<div class='container-inner'>
 	<?php
-	// 1. get page id.
-	// 2. get page content.
-	// 3. display page content.
-	$page_id    = get_the_ID();
-	$page_obj   = get_post( $page_id );
-	$content    = apply_filters( 'the_content', $page_obj->post_content );
-	$page_title = apply_filters( 'the_title', $page_obj->post_title );
-	echo wp_kses_post( "<h1>$page_title</h1>" );
-	echo wp_kses_post( $content );
+	// If page is home page, display home page content from home-page.php, else display page content from general-page.php.
+	if ( is_front_page() || is_home() ) {
+		get_template_part( 'template-parts/home-page' );
+	} else {
+		get_template_part( 'template-parts/general-page' );
+	}
 
 	?>
 </div></div>

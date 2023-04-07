@@ -69,6 +69,8 @@ html footer .footer-section ul li {
 }
 html footer .footer-section ul li a {
   color: #FFF;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 html footer .footer-section ul li a:hover {
   text-decoration: none;
@@ -112,9 +114,9 @@ footer .footer-social a::before {
 footer .footer-social i {
   position: relative;
   z-index: 100;
-  padding: 6px 9px;
+  padding: 12px 12px;
   color: #FFF;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 footer .footer-social i::before {
   z-index: 100;
@@ -149,12 +151,30 @@ footer .footer-social i:hover {
 .footer-wrapper footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
   color: white;
   background-color: #002244;
   padding: 1rem 0.5rem;
+}
+@media all and (min-width: 768px) {
+  .footer-wrapper footer {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media all and (min-width: 1024px) {
+  .footer-wrapper footer {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media all and (min-width: 1200px) {
+  .footer-wrapper footer {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 .footer-wrapper footer .footer-biz-data {
   text-align: center;

@@ -17,19 +17,19 @@ defined( 'ABSPATH' ) || exit;
 			<h2 class=footer-title>WP MASTER BUILDER</h2>
 			<div>©<?php echo do_shortcode( '[wpmb_current_year]' ); ?> Josh Robbs</div>
 			<div class='footer-social'>
-				<div class='twitter social-link'>
+				<div class='twitter social-link' title='Twitter link'>
 					<a href='https://twitter.com/joshrobbs' target='_blank'><i class='fab fa-twitter'></i></a>
 				</div>
-				<div class="instagram social-link">
+				<div class="instagram social-link" title='Instagram link'>
 					<a href="https://www.instagram.com/joshrobbs/" target="_blank"><i class="fab fa-instagram"></i></a>
 				</div>
-				<div class="linkedin social-link">
+				<div class="linkedin social-link" title='LinkedIn link'>
 					<a href="https://www.linkedin.com/in/joshrobbs/" target="_blank"><i class="fab fa-linkedin"></i></a>
 				</div>
-				<div class="youtube social-link">
+				<div class="youtube social-link" title='YouTube link'>
 					<a href="https://www.youtube.com/channel/UCqwXzxkCClsh_4nMGNBK6xw" target="_blank"><i class="fab fa-youtube"></i></a>
 				</div>
-				<div class="github social-link">
+				<div class="github social-link" title='Github link'>
 					<a href="https://github.com/jwrobbs" target="_blank"><i class="fab fa-github"></i></a>
 				</div>
 			</div>

@@ -164,3 +164,32 @@ function wpmb_current_year_shortcode() {
 	return date( 'Y' );
 }
 add_shortcode( 'wpmb_current_year', 'wpmb_current_year_shortcode' );
+
+// create a function to display 3 recent posts with links and featured image.
+/**
+ * Show recent posts
+ *
+ * @author Josh
+ * @created 2023-04-05
+ *
+ * @param string $count Number of posts to show.
+ * @return string
+ */
+function wpmb_recent_posts( $count = 3 ) {
+	$recent_posts = wp_get_recent_posts(
+		array(
+			'numberposts' => $count,
+			'post_status' => 'publish',
+		)
+	);
+
+	ob_start();
+	if ( 0 < count( $recent_posts ) ) {
+		echo '<ul role="list">';
+		foreach ( $recent_posts as $recent ) {
+			echo '<li><a href="' . esc_url( get_permalink( $recent['ID'] ) ) . '">' . esc_html( $recent['post_title'] ) . '</a></li>';
+		}
+		echo '</ul>';
+	}
+	return ob_get_clean();
+}

@@ -3,6 +3,10 @@ html .home {
 	justify-content: center;
 	align-items: center;
 
+	#content {
+		background-color: transparent;
+	}
+
 	.home-hero {
 		min-height: calc(90vh - 200px);
 		@media all and (min-width: 800px) {
@@ -16,16 +20,16 @@ html .home {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: center;
-		
-
 
 		// background: radial-gradient(circle at center, rgba(0,0,0,.8) 0, transparent 80% );
 
-		h1, h2, .buttons {
+		h1,
+		h2,
+		.buttons {
 			color: $white;
 			text-align: center;
 			flex: 1 0 100%;
-			line-height: 1.2;;
+			line-height: 1.2;
 		}
 		.buttons {
 			display: flex;
@@ -44,11 +48,11 @@ html .home {
 				padding: 1rem 2rem;
 				text-decoration: none;
 				color: $white;
-				transition: all .2s ease-in-out;
+				transition: all 0.2s ease-in-out;
 
 				&:hover {
-					content: 'Articles';
-					transition: all .2s ease-in-out;
+					content: "Articles";
+					transition: all 0.2s ease-in-out;
 					// background-color: $blue-dark;
 					background-color: $blue;
 				}
@@ -56,7 +60,6 @@ html .home {
 		}
 	}
 }
-
 
 // html .home {
 // 	.home-hero {

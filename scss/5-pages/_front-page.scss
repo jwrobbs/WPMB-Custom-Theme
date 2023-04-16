@@ -1,4 +1,4 @@
-html .home {
+html .front-page {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -56,19 +56,3 @@ html .home {
 		}
 	}
 }
-
-
-// html .home {
-// 	.home-hero {
-// 		padding: 3rem 0;
-// 		background-color: $black;
-// 		color: $white;
-
-// 		h2,h3 {
-// 			text-align: center;
-// 		}
-// 		.ml-embedded {
-// 			margin-top: 2rem;;
-// 		}
-// 	}
-// }

@@ -1,14 +1,16 @@
-html, :root {
+html,
+:root {
 	--base-size: 18px;
-
 	font-size: var(--base-size);
 	@media all and (max-width: 768px) {
 		font-size: 16px;
 	}
-
 	line-height: 1.4;
 
-	background-color: $black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	background-color: $blue-dark;
 
 	* {
 		box-sizing: border-box;
@@ -17,14 +19,29 @@ html, :root {
 
 body {
 	margin: 0;
+	background: radial-gradient(
+		circle at center,
+		rgba(0, 0, 0, 0.8) 0,
+		transparent 80%
+	);
+	min-height: 100vh;
 }
 
 .container {
-	max-width: $max-width;
 	margin: 0 auto;
-	padding: 0 1rem 1rem;
+	padding: 0 1rem;
+	width: 100%;
+	max-width: 400px;
+
+	max-width: $max-width-sm;
+	@media all and (min-width: 815px) {
+		max-width: $max-width-md;
+	}
+	@media all and (min-width: 1215px) {
+		max-width: $max-width-lg;
+	}
 }
 
-#content .container-inner {
+#content {
 	background-color: $white;
 }

@@ -1,0 +1,40 @@
+html .pre-footer {
+	padding: 1rem 1rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	@media all and (min-width: 815px) {
+		padding: 2rem;
+		grid-template-columns: 1fr 400px;
+	}
+
+	.pre-footer-text {
+		// padding: 1rem;
+		h2,
+		p {
+			text-align: center;
+			color: $white;
+		}
+	}
+	.pre-footer-form {
+		flex: 0;
+		width: 100%;
+		max-width: 400px;
+
+		form {
+			.ml-field-group {
+				display: flex;
+				justify-content: center;
+
+				input.form-control {
+					padding: 0.5rem 1rem;
+					font-size: 1rem;
+				}
+			}
+
+			.ml-form-embedSubmit {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}

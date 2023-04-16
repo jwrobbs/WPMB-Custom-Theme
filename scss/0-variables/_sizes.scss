@@ -1,2 +1,4 @@
-
-$max-width: 1140px;
+$base-max-width: 400px;
+$max-width-sm: $base-max-width * 1;
+$max-width-md: $base-max-width * 2;
+$max-width-lg: $base-max-width * 3;

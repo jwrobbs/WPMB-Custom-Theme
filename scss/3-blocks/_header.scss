@@ -1,16 +1,12 @@
-.header-wrapper {
-	header {
-		border-top: 6.2px solid $red-dark;
-		// border-bottom: 3.8px solid $red-dark;
-		display: grid;
-		grid-template-columns: 1fr;
-		align-items: center;
-		// padding: 1rem 0;
-		background-color: $black;
+// .header-wrapper {
+	html .header {
+		margin-top: 1rem;
+		background-color: $blue-dark;
+		border-radius: 5px 5px 0 0;
+
+		@media all and (min-width: 800px) {
+			display: flex;
+			align-items: center;
+		}
 	}
-	.site-title {
-		// background-color: $black;
-		color: $white;
-		text-align: center;
-	}
-}
+// }

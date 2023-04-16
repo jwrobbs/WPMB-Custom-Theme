@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> >
+<html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,21 +18,21 @@ defined( 'ABSPATH' ) || exit;
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> >
-<?php
-do_action( 'wp_body_open' );
-?>
-<div class='container header-wrapper'>
+<body <?php body_class(); ?>>
+	<?php
+		do_action( 'wp_body_open' );
+	?>
+	<!-- <div class='container header-wrapper'> -->
 	<a class="skip-link visually-hidden" href="#content">
 		<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
 	</a>
-	<header class=''>
+	<header class='header container'>
 		<div class='site-title'>
 			<?php
 			if ( is_home() ) {
-				echo '<span>WP Master Builder</span>';
+				echo '<span>WPMB</span>';
 			} else {
-				echo '<a href="/">WP Master Builder</a>';
+				echo '<a href="/">WPMB</a>';
 			}
 			?>
 		</div>
@@ -40,5 +40,5 @@ do_action( 'wp_body_open' );
 			<?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
 		</nav>
 	</header>
-</div>
-<div id="content">
+	<!-- </div> -->
+	<div id="content" class='container'>

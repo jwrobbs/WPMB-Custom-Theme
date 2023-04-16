@@ -79,6 +79,34 @@ body {
   background-color: #FFF;
 }
 
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
 button.primary {
   padding: 0.75rem 1.5rem;
   margin: 1rem auto;
@@ -390,6 +418,9 @@ html .home {
       -ms-flex-align: center;
           align-items: center;
 }
+html .home #content {
+  background-color: transparent;
+}
 html .home .home-hero {
   min-height: calc(90vh - 200px);
   display: -webkit-box;
@@ -413,7 +444,9 @@ html .home .home-hero {
     padding: 5rem;
   }
 }
-html .home .home-hero h1, html .home .home-hero h2, html .home .home-hero .buttons {
+html .home .home-hero h1,
+html .home .home-hero h2,
+html .home .home-hero .buttons {
   color: #FFF;
   text-align: center;
   -webkit-box-flex: 1;

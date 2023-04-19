@@ -21,7 +21,16 @@
 	background-color: white;
 	max-height: 0;
 	overflow: hidden;
+	transition: all ease 0.2s;
 	transition: max-height 0.2s ease-out;
+	border: 1px solid #fff;
+	border-top-width: 0px;
+}
+.panel.active {
+	border-color: #002244;
+	transition: all ease 0.2s;
+	transition: max-height 0.2s ease-out;
+	//looks like I have to explicitly create a color animation
 }
 
 // https://www.w3schools.com/howto/howto_js_accordion.asp
